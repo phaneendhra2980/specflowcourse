@@ -1,21 +1,12 @@
 ﻿<Properties StartupConfiguration="{64F23EE6-94A7-4F49-903B-BD513A072D73}|Default">
   <MonoDevelop.Ide.ItemProperties.CalculatorSelenium.Specs PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CalculatorSelenium.Specs/Hooks/CalculatorHooks.cs">
-    <Files>
-      <File FileName="CalculatorSelenium.Specs/Hooks/CalculatorHooks.cs" Line="3" Column="7" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CalculatorSelenium" expanded="True">
-            <Node name="CalculatorSelenium.Specs" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Hooks" expanded="True">
-                <Node name="CalculatorHooks.cs" selected="True" />
-              </Node>
-              <Node name="Steps" expanded="True" />
+            <Node name="CalculatorSelenium.Specs" expanded="True" selected="True">
+              <Node name="Hooks" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -23,7 +14,11 @@
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
           <Node name="CalculatorSelenium" expanded="True">
-            <Node name="CalculatorSelenium.Specs" selected="True" />
+            <Node name="CalculatorSelenium.Specs" expanded="True" selected="True">
+              <Node name="CalculatorSelenium.Specs.Features" expanded="True">
+                <Node name="CalculatorFeature" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
