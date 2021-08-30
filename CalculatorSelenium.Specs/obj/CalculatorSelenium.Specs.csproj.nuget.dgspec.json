@@ -13,10 +13,12 @@
         "packagesPath": "/Users/phaneendhra/.nuget/packages/",
         "outputPath": "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/obj/",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
-          "/Users/phaneendhra/.nuget/NuGet/NuGet.Config"
+          "/Users/phaneendhra/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
+          "net5.0",
           "netcoreapp3.1"
         ],
         "sources": {
@@ -25,6 +27,10 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          },
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,6 +43,63 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[92.0.4515.10700, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.22, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.22, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.50, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        },
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
