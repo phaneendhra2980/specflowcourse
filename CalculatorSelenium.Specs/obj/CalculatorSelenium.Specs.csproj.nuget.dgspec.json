@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/CalculatorSelenium.Specs.csproj": {}
+  },
+  "projects": {
+    "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/CalculatorSelenium.Specs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/CalculatorSelenium.Specs.csproj",
+        "projectName": "CalculatorSelenium.Specs",
+        "projectPath": "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/CalculatorSelenium.Specs.csproj",
+        "packagesPath": "/Users/phaneendhra/.nuget/packages/",
+        "outputPath": "/Users/phaneendhra/SPECFLOWCOURSE/specflowcourse/CalculatorSelenium.Specs/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/phaneendhra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[91.0.4472.10100, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.7.13, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.7.10, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
