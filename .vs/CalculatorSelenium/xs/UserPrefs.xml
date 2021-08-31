@@ -1,23 +1,30 @@
 ﻿<Properties StartupConfiguration="{64F23EE6-94A7-4F49-903B-BD513A072D73}|Default">
-  <MonoDevelop.Ide.ItemProperties.CalculatorSelenium.Specs PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CalculatorSelenium.Specs PreferredExecutionTarget="netcoreapp3.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculatorSelenium.Specs/Drivers/BrowserDriver.cs">
+    <Files>
+      <File FileName="CalculatorSelenium.Specs/Steps/CalculatorStepDefinitions.cs" Line="14" Column="50" />
+      <File FileName="CalculatorSelenium.Specs/Drivers/BrowserDriver.cs" Line="18" Column="82" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CalculatorSelenium" expanded="True">
-            <Node name="CalculatorSelenium.Specs" expanded="True" selected="True">
+            <Node name="CalculatorSelenium.Specs" expanded="True">
+              <Node name="Drivers" expanded="True">
+                <Node name="BrowserDriver.cs" selected="True" />
+              </Node>
+              <Node name="Features" expanded="True" />
               <Node name="Hooks" expanded="True" />
+              <Node name="Steps" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="CalculatorSelenium" expanded="True">
-            <Node name="CalculatorSelenium.Specs" expanded="True" selected="True">
-              <Node name="CalculatorSelenium.Specs.Features" expanded="True">
-                <Node name="CalculatorFeature" expanded="True" />
-              </Node>
+          <Node name="CalculatorSelenium" expanded="True" selected="True">
+            <Node name="CalculatorSelenium.Specs" expanded="True">
+              <Node name="CalculatorSelenium.Specs.Features" expanded="True" />
             </Node>
           </Node>
         </State>

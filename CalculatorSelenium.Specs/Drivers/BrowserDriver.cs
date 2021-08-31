@@ -1,6 +1,9 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 
 namespace CalculatorSelenium.Specs.Drivers
 {
@@ -14,7 +17,7 @@ namespace CalculatorSelenium.Specs.Drivers
 
         public BrowserDriver()
         {
-            _currentWebDriverLazy = new Lazy<IWebDriver>(CreateWebDriver);
+            _currentWebDriverLazy = new Lazy<IWebDriver>(CreateWebDriver("chrome"));
         }
 
         /// <summary>
@@ -26,16 +29,29 @@ namespace CalculatorSelenium.Specs.Drivers
         /// Creates the Selenium web driver (opens a browser)
         /// </summary>
         /// <returns></returns>
-        private IWebDriver CreateWebDriver()
+        private IWebDriver CreateWebDriver(string browser)
         {
-            //We use the Chrome browser
-            var chromeDriverService = ChromeDriverService.CreateDefaultService();
+            IWebDriver driver=null ;
+            switch (browser)
+            {
+                case "chrome":
+                    //We use the Chrome browser
+                    var chromeDriverService = ChromeDriverService.CreateDefaultService();
+                    var chromeOptions = new ChromeOptions();
+                    //chromeDriverService
+                    driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), chromeOptions);
+                    break;
+                case "firefox":
+                    //We use the Firefox browser
+                    var firefoxdriverservice = FirefoxDriverService.CreateDefaultService();
+                    var firefoxOptions = new FirefoxOptions();
+                    driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), firefoxOptions);
+                    break;
+                default:
+                    break;
+            }           
 
-            var chromeOptions = new ChromeOptions();
-
-            var chromeDriver = new ChromeDriver(chromeDriverService, chromeOptions);
-
-            return chromeDriver;
+            return driver;
         }
 
         /// <summary>
